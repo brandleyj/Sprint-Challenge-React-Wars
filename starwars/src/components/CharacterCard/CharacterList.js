@@ -6,6 +6,7 @@ import styled from "styled-components";
 const Cards = styled.div`
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 `;
 
 function CharacterList() {
@@ -33,6 +34,8 @@ function CharacterList() {
 						birth={character.birth_year}
 						height={character.height}
 						mass={character.mass}
+						eye={character.eye_color}
+						hair={character.hair_color}
 					/>
 				);
 			})}
